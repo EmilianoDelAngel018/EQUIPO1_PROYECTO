@@ -1,18 +1,54 @@
 body {
     background: #000428;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #004e92, #000428);  
-background: linear-gradient(to right, #004e92, #000428); 
+background: -webkit-linear-gradient(to right, #54800e, #0f2800);  
+background: linear-gradient(to right, #000000,#4d4d4d, #000000); 
 }
 header {
     margin: 30px 0;
 }
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container section{
+    margin: 10px;
+}
+
 .contenido {
     padding:20px;
 }
 .contenido-principal {
-    background-color: white;
+    background-color: rgba(22, 22, 22, 0.795);
     padding: 30px;
     border-radius: 20px;
+    margin-top: 10px;
+    width: 45%;
+}
+
+.contenido-principal input{
+    color: #ffffff;
+    background-color: #00042800;
+    border: none;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    border-radius: 0;
+}
+.boton{
+    width: 30%;
+    margin: 0 35% ;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+.boton:hover{
+    transition-duration: 1s;
+    background-color: #00000048;
+    border: solid 1px white;
+    color: white;
 }
 .presupuesto p{
     margin-bottom: 0;
@@ -26,13 +62,62 @@ header {
 }
 h1{
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    color: white;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 h2 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    color:#004e92;
+    font-weight: normal;
+    color:#ffffff;
     font-size: 22px;
-    margin-bottom:30px;
+    margin-bottom:15px;
+}
+li{
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 770px)   {
+    body {
+        background: #000428;  /* fallback for old browsers */
+    background: linear-gradient(to right, #ffffff,#4e4e4e, #ffffff); 
+    }
+    h2{
+        color: black;
+    }
+    .contenido-principal{
+        background-color: #ffffff;
+    }
+    .boton{
+        background-color: black;
+        color: white;
+    }
+    .boton:hover{
+        transition-duration: 1s;
+        background-color: #25578348;
+        color: #000428;
+    }
+    .contenido-principal input{
+        border-bottom: solid 1px black;
+        color: black;
+    }
+    .container{
+        display:block;
+    }
+
+    .container section{
+        width: 70%;
+        margin: 1% 15%;
+    }
+
+    li{
+        color: black;
+        border: solid 1px gray;
+        list-style: none;
+        text-align: center;
+    }
+
+
 }
