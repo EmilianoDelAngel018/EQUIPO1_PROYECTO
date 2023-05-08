@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" conten10
+    t="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
@@ -15,6 +16,16 @@
     <header>
         <h1 class="text-center">Gasto Semanal</h1>
 </header>
+    <section class="secP">
+        <div id="presupuesto" class="presupuesto">
+            <div class="alert alert-primary">
+                <p>Presupuesto: $ <span id="total"></span> </p>
+            </div>
+            <div class="restante alert alert-success">
+                <p>Restante: $ <span id="restante"></span></p>
+            </div>
+        </div> <!--.presupuesto-->
+    </section>
     <div class="container">
         
         <section class="contenido-principal">
@@ -32,7 +43,7 @@
                                     <input type="text" class="form-control" id="cantidad" placeholder="Cantidad $">
                                 </div>
 
-                                <input class="boton" type="submit" value="Enviar" onclick="imprimirGastos()">
+                                <input id="enviar" class="boton" type="submit" value="Enviar" onclick="imprimirGastos()">
                             </form>
 
                     </div> <!--.contenido-->
@@ -50,23 +61,16 @@
 
                     <div id="gastos">
                         <ul   class="list-group">
-                            
+                            <!--AQUI SE INSERTAN LOS GASTOS-->
                         </ul>
                     </div>
-                    <div id="presupuesto" class="presupuesto">
-                        <div class="alert alert-primary">
-                            <p>Presupuesto: $ <span id="total"></span> </p>
-                        </div>
-                        <div class="restante alert alert-success">
-                            <p>Restante: $ <span id="restante"></span></p>
-                        </div>
-                    </div> <!--.presupuesto-->
+                    
                 </div> <!--.contenido-->
             </div><!--.col-->
         </section>
     </div>
 
 
-    <script src="./js/Java.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
